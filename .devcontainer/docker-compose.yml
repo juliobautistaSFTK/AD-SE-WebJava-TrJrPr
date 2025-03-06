@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  maven-java8:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Asumiendo que Dockerfile está en el directorio actual
+    image: maven-java8
+
+  tomcat-app:
+    build:
+      context: .
+      dockerfile: Dockerfiletomcat  # Dockerfiletomcat también en el directorio actual
+    image: my-tomcat-app
+
+  mariadb:
+    build:
+      context: .
+      dockerfile: Dockerfilemaria  # Dockerfilemaria en el directorio actual
+    image: mariadb:11.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678  # Contraseña para el root de MariaDB
+    ports:
+      - "3306:3306"  # Exponer el puerto de MariaDB
