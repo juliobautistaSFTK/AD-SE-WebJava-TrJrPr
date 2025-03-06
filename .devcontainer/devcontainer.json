@@ -1,0 +1,9 @@
+{
+  "name": "My Docker Environment",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "maven-java8",  // Elige el servicio que quieras que sea el principal
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "docker-compose up -d"
+}
