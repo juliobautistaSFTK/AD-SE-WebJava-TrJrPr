@@ -1,0 +1,9 @@
+
+version: '3.8'
+
+services:
+  maven-java8:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Asumiendo que Dockerfile está en el directorio actual
+    image: maven-java8
