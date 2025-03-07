@@ -1,5 +1,5 @@
 {
-  "dockerComposeFile": "../docker-compose.yml",
+  "dockerComposeFile": "docker-compose.yml",
   "service": "maven-java8",
   "postCreateCommand": "docker-compose up -d"
 }
