@@ -26,5 +26,8 @@ services:
     container_name: mariadb_1   # Nombre específico para el contenedor
     environment:
       MYSQL_ROOT_PASSWORD: 12345678  # Contraseña para el root de MariaDB
+      MYSQL_DATABASE: taskmanager
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 12345678
     ports:
       - "3306:3306"  # Exponer el puerto de MariaDB
