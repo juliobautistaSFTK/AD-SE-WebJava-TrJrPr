@@ -1,7 +1,7 @@
 {
-    "name": "Nginx Dev Container",
+    "name": "Dev Container",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "mariadb_1",
+    "service": "mariadb",
     "settings": {},
     "forwardPorts": [80],
     "postCreateCommand": "docker-compose up -d",
