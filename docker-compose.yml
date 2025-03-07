@@ -22,7 +22,7 @@ services:
       dockerfile: Dockerfile  # Asumiendo que Dockerfile está en el directorio actual
     image: maven-java8
     container_name: maven-java8-container  # Nombre específico para el contenedor
-    depend_on:
+    depends_on:
       - mariadb
 
   tomcat-app:
@@ -31,7 +31,7 @@ services:
       dockerfile: Dockerfiletomcat  # Dockerfiletomcat también en el directorio actual
     image: my-tomcat-app
     container_name: my-tomcat-container  # Nombre específico para el contenedor
-    depend_on:
+    depends_on:
       - mariadb
     ports:
       - "8080:8080" 
