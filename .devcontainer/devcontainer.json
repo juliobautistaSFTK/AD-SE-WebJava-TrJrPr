@@ -2,5 +2,4 @@
     "name": "Dev Container",
     "dockerComposeFile": "docker-compose.yml",
     "service": "mariadb",
-    "postCreateCommand": "docker-compose up -d",
 }
