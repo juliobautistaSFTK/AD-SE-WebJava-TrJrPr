@@ -16,7 +16,8 @@ services:
       dockerfile: Dockerfiletomcat  # Dockerfiletomcat también en el directorio actual
     image: my-tomcat-app
     container_name: my-tomcat-container  # Nombre específico para el contenedor
-
+    ports:
+      - "8080:8080" 
 
   mariadb:
     build:
