@@ -7,3 +7,9 @@ services:
       context: .
       dockerfile: Dockerfile  # Asumiendo que Dockerfile está en el directorio actual
     image: maven-java8
+
+  tomcat-app:
+    build:
+      context: .
+      dockerfile: Dockerfiletomcat  # Dockerfiletomcat también en el directorio actual
+    image: my-tomcat-app
