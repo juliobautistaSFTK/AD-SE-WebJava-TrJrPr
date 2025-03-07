@@ -28,28 +28,13 @@ jobs:
       run: |
           docker build -f Dockerfilemaria -t mariadb:11.7 .
           sleep 30  # Espera 30 segundos
-
-    - name: Run MariaDB container
-      run: |
           docker run --name mariadb_1 -d -e MYSQL_ROOT_PASSWORD=12345678 -p 3306:3306 --network red1 mariadb:11.7
           sleep 30  # Espera 30 segundos para que el contenedor se inicie
-
-    - name: Run a command inside the MariaDB container
-      run: |
           docker exec mariadb_1 bash -c "apt-get update && apt-get install -y mysql-client"
           sleep 30
-    - name: copia sql
-      run: |
-          docker cp CreateSQLtask.sql mariadb_1:/tmp/CreateSQLtask.sql
-          sleep 30
-    - name: Crear sql
-      run: |
           docker exec -i mariadb_1 mysql -u root -p12345678 taskmanager < CreateSQLtask.sql
-          sleep 5
-    - name: obte sql ip
-      run: |
-          docker inspect mariadb_1
           sleep 5          
+      
     - name: Test
       run: |
           mvn test
