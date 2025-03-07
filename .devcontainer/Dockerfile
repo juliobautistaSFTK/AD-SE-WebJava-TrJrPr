@@ -12,7 +12,7 @@ RUN java -version
 RUN mvn -version
 
 # Copiar el código fuente del proyecto en el contenedor
-COPY . /app
+###COPY . /app
 
 # Mantener el contenedor en ejecución
 CMD ["tail", "-f", "/dev/null"]
