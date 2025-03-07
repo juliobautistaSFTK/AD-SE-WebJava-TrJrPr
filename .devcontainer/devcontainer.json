@@ -1,5 +1,0 @@
-{
-    "name": "Dev Container",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "mariadb",
-}
