@@ -2,7 +2,5 @@
     "name": "Dev Container",
     "dockerComposeFile": "docker-compose.yml",
     "service": "mariadb",
-    "settings": {},
-    "forwardPorts": [80],
     "postCreateCommand": "docker-compose up -d",
 }
