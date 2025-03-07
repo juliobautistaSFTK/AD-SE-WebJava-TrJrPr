@@ -1,6 +1,0 @@
-{
-  "version": "2",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "maven-java8",
-}
-
