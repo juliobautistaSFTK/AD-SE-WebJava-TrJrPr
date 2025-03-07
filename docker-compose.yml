@@ -17,7 +17,7 @@ services:
       - "3306:3306"  # Exponer el puerto de MariaDB
     networks:
       my_custom_network:
-        ipv4_address: 172.18.0.4
+        ipv4_address: 172.18.0.2
         
   maven-java8:
     build:
