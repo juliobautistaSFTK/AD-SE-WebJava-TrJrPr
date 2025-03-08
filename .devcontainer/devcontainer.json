@@ -2,7 +2,6 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {},
   "postCreateCommand": [
-    "docker-compose -f /workspace/docker-compose.yml up -d",
     "/workspace/up.sh"
   ],
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
