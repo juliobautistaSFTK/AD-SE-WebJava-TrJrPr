@@ -1,4 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+  "features": {},
+  "postCreateCommand": [
+    "docker-compose -f /workspace/docker-compose.yml up -d"
+  ]
 }
