@@ -6,4 +6,4 @@ docker exec maven-java8-container mvn clean install -DskipTests
 sleep 5
 docker cp maven-java8-container:/app/target/TaskManager.war target/
 sleep 5
-Docker cp target/TaskManager.war my-tomcat-container:/usr/local/tomcat/webapps/TaskManager.war
+docker cp target/TaskManager.war my-tomcat-container:/usr/local/tomcat/webapps/TaskManager.war
