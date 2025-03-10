@@ -2,23 +2,6 @@
 version: '3.8'
 
 services:
-  maven-java8:
-    build:
-      context: .
-      dockerfile: Dockerfile  # Asumiendo que Dockerfile está en el directorio actual
-    image: maven-java8
-    container_name: maven-java8-container  # Nombre específico para el contenedor
-
-
-  tomcat-app:
-    build:
-      context: .
-      dockerfile: Dockerfiletomcat  # Dockerfiletomcat también en el directorio actual
-    image: my-tomcat-app
-    container_name: my-tomcat-container  # Nombre específico para el contenedor
-    ports:
-      - "8080:8080" 
-
   mariadb:
     build:
       context: .
@@ -32,3 +15,24 @@ services:
       MYSQL_PASSWORD: 12345678
     ports:
       - "3306:3306"  # Exponer el puerto de MariaDB
+        
+  maven-java8:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Asumiendo que Dockerfile está en el directorio actual
+    image: maven-java8
+    container_name: maven-java8-container  # Nombre específico para el contenedor
+    depends_on:
+      - mariadb
+
+  tomcat-app:
+    build:
+      context: .
+      dockerfile: Dockerfiletomcat  # Dockerfiletomcat también en el directorio actual
+    image: my-tomcat-app
+    container_name: my-tomcat-container  # Nombre específico para el contenedor
+    depends_on:
+      - mariadb
+    ports:
+      - "8080:8080" 
+
