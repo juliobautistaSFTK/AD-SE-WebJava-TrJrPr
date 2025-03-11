@@ -6,17 +6,24 @@ Los Actions son flujos de trabajo que se activan al hacer un commit en el reposi
 
 De forma automática este Action compila el proyecto con Maven, crea una base de datos Mariadb, crea una tabla y posteriormente ejecuta los test del código con Maven.
 
-![Descripción de la imagen](../Imagenes/imagenes/Img6.png)
+![Descripción de la imagen](../Imagenes/imagenes/Img40.png)
 
-La notificación es similar a un correo.
+Este Action viene precargado y no se debe modificar.
 
-![Descripción de la imagen](../Imagenes/imagenes/Img7.png)
+Si tienes como resultado algo parecido a esta pantalla, significa que algo salió mal entre la compilación, los test o tu código no apunta correctamente a la base de datos.
 
-Selecciona aceptar invitación.
+![Descripción de la imagen](../Imagenes/imagenes/Img41.png)
 
-![Descripción de la imagen](../Imagenes/imagenes/Img8.png)
+Para ver el detalle del error da clic en el resultado y te debe aparecer algo similar a esta imagen.
 
-Selecciona fork.
+![Descripción de la imagen](../Imagenes/imagenes/Img42.png)
+
+Este ejercicio utiliza otra herramienta que se llama Codespaces. Un codespace es un ambiente de desarrollo que se hospeda en la nube. 
+
+Este ejercicio cuenta con un docker-compose.yml que crea 3 contenedores de docker.
+
+=============================================================
+
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img9.png)
 
