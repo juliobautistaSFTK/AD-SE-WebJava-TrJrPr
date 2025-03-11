@@ -5,7 +5,8 @@
 # **Instrucciones para el participante**
 [Ver](Instrucciones/Readme_participante.md)
 
-
+# **Uso de Action y Codespaces**
+[Ver](Instrucciones/Readme_action_codespaces.md)
 
 # **Ejercicio INTEGRACIÓN CONTINUA CON LIQUIBASE**
 
