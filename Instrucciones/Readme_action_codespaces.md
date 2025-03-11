@@ -1,5 +1,10 @@
-### Indicaciones para el Participante
-Recibirás una notificación, se verá en tu github como la siguiente pantalla.
+### Guía para el ejercicio AD-SE-WebJava-TrJrPr
+
+En este ejercicio se utilizan 2 características de GITHUB, se llaman Actions y Codespaces.
+
+Los Actions son flujos de trabajo que se activan al hacer un commit en el repositorio, la finalidad del Action en este ejercicio, es descargar el código en un área virtual propia de GITHUB.
+
+De forma automática este Action compila el proyecto con Maven, crea una base de datos Mariadb, crea una tabla y posteriormente ejecuta los test del código con Maven.
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img6.png)
 
