@@ -1,6 +1,6 @@
 ### Guía para el ejercicio AD-SE-WebJava-TrJrPr
 
-En este ejercicio se utilizan 2 características de GITHUB, se llaman Actions y Codespaces.
+**En este ejercicio se utilizan 2 características de GITHUB, se llaman Actions y Codespaces.**
 
 Los Actions son flujos de trabajo que se activan al hacer un commit en el repositorio, la finalidad del Action en este ejercicio, es descargar el código en un área virtual propia de GITHUB.
 
@@ -8,7 +8,7 @@ De forma automática este Action compila el proyecto con Maven, crea una base de
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img40.png)
 
-Este Action viene precargado y no se debe modificar.
+**Este Action viene precargado y no se debe modificar.**
 
 Si tienes como resultado algo parecido a esta pantalla, significa que algo salió mal entre la compilación, los test o tu código no apunta correctamente a la base de datos.
 
@@ -18,7 +18,7 @@ Para ver el detalle del error da clic en el resultado y te debe aparecer algo si
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img42.png)
 
-Este ejercicio utiliza otra herramienta que se llama Codespaces. Un codespace es un ambiente de desarrollo que se hospeda en la nube. 
+**Este ejercicio utiliza otra herramienta que se llama Codespaces. Un codespace es un ambiente de desarrollo que se hospeda en la nube.**
 
 Este ejercicio cuenta con un docker-compose.yml que crea 3 contenedores de docker.
 
@@ -32,13 +32,13 @@ Por lo que tu código debe apegarse a esta estructura, los datos para conectarse
 
 2.	Server Maven, para hacer la entrega debes utilizar este contenedor ya que cuenta con las características técnicas que solicita el ejercicio.
 
-a.	Para interactuar con este contenedor tu código debe estar en src y a nivel raíz tu pom.xml
+<pre>     a.	Para interactuar con este contenedor tu código debe estar en src y a nivel raíz tu pom.xml</pre>
 
 3.	Server Tomcat, para hacer la entrega debes utilizar este contenedor, este contenedor te permite visualizar tu proyecto dentro del codespace.
 
-a.	Para interactuar con este contenedor, es necesario contar con el war en la carpeta target.
+<pre>     a.	Para interactuar con este contenedor, es necesario contar con el war en la carpeta target.</pre>
 
-Cómo utilizar el codespace
+**Cómo utilizar el codespace**
 
 Para crear la base de datos se ejecutan estos comandos:
 
