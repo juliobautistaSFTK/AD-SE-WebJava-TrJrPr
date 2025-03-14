@@ -26,10 +26,6 @@ Teclea docker-compose up -d
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img59.png)
 
-
-
-![Descripción de la imagen](../Imagenes/imagenes/Img43.png)
-
 1.	Base de datos, para hacer la entrega debes utilizar esta base de datos, la base de datos se llama taskmanager, la tabla tiene la siguiente estructura:
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img43.png)
