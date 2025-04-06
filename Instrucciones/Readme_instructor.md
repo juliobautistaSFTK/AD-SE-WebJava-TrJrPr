@@ -38,7 +38,7 @@ Mostrará este mensaje de invitación, quedará como pendiente y se quitará cua
 
 4.-Esto te llevará al repositorio del participante, selecciona Actions.
 
-![Descripción de la imagen](../imagenes/Img35.png)
+![Descripción de la imagen](../Imagenes/imagenes/Img35.png)
 
 5.-Ahí podrás observar, si el action está en verde significa que todo se ejecutó correctamente.
 
