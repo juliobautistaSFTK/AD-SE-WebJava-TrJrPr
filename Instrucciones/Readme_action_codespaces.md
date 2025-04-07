@@ -52,6 +52,9 @@ c).	Server Tomcat, para hacer la entrega debes utilizar este contenedor, este co
     
     docker exec -i mariadb_1 mysql -u root -p12345678 taskmanager < CreateSQLtask.sql
 
+    sleep 5
+
+
 6.-Esto crear la tabla que se debe usar en el ejercicio
 
 Para compilar el código utiliza estas instrucciones:
@@ -61,6 +64,9 @@ Para compilar el código utiliza estas instrucciones:
     sleep 5
     
     docker cp maven-java8-container:/app/target/TaskManager.war target/
+
+    sleep 5
+
 
 7.-Para desplegar el war utiliza esta instrucción:
 
