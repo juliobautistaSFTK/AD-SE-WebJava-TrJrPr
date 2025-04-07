@@ -69,6 +69,12 @@ Si quieres utilizar el Codespace con Visual Studio Code, necesitas tener instala
 
 17.-Para entregar tu ejercicio, debes previamente hacer el push a tu rama en tu repositorio.
 
+      git add .
+      
+      git commit -m "Carga para la solucion"
+      
+      git push
+
 ### Una vez que tu solución esté en tu rama, deberás comparar tu rama local y la rama del fork, basta con agregar la palabra compare al link de tu repositorio como la siguiente imagen.
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img27.png)
