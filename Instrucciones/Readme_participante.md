@@ -67,7 +67,7 @@ Si quieres utilizar el Codespace con Visual Studio Code, necesitas tener instala
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img21.png)
 
-17.-Para entregar tu ejercicio, debes previamente hacer el push a tu rama en tu repositorio.
+17.-Para entregar tu ejercicio, debes previamente hacer el push a tu rama en tu repositorio, para eso, ajecuta los siguientes comandos.
 
       git add .
       
