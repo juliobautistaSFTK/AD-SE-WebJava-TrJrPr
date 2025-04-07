@@ -48,6 +48,12 @@ c).	Server Tomcat, para hacer la entrega debes utilizar este contenedor, este co
 
 ![Descripción de la imagen](../Imagenes/imagenes/Img45.png)
 
+docker exec mariadb_1 bash -c "apt-get update && apt-get install -y mysql-client"
+
+sleep 30
+
+docker exec -i mariadb_1 mysql -u root -p12345678 taskmanager < CreateSQLtask.sql
+
 6.-Esto crear la tabla que se debe usar en el ejercicio
 
 Para compilar el código utiliza estas instrucciones:
