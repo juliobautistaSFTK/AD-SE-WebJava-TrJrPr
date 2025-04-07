@@ -37,7 +37,7 @@ Por lo que tu código debe apegarse a esta estructura, los datos para conectarse
 b).	Server Maven, para hacer la entrega debes utilizar este contenedor ya que cuenta con las características técnicas que solicita el ejercicio.
 
 <pre>     a.	Para interactuar con este contenedor tu código debe estar en src y a nivel raíz tu pom.xml</pre>
-<pre>           Tu pom.xml debe estar a nivel raíz</pre>
+<pre>     Tu pom.xml debe estar a nivel raíz del proyecto</pre>
 
 
 c).	Server Tomcat, para hacer la entrega debes utilizar este contenedor, este contenedor te permite visualizar tu proyecto dentro del codespace.
