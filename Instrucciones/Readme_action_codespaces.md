@@ -56,11 +56,15 @@ c).	Server Tomcat, para hacer la entrega debes utilizar este contenedor, este co
 
 Para compilar el código utiliza estas instrucciones:
 
-![Descripción de la imagen](../Imagenes/imagenes/Img46.png)
+    docker exec maven-java8-container mvn clean install -DskipTests
+    
+    sleep 5
+    
+    docker cp maven-java8-container:/app/target/TaskManager.war target/
 
 7.-Para desplegar el war utiliza esta instrucción:
 
-docker cp target/TaskManager.war my-tomcat-container:/usr/local/tomcat/webapps/TaskManager.war
+    docker cp target/TaskManager.war my-tomcat-container:/usr/local/tomcat/webapps/TaskManager.war
 
 8.-ahora da clic en puertos
 
